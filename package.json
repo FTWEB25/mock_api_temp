@@ -1,0 +1,24 @@
+{
+  "name": "mock_api_temp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FTWEB25/mock_api_temp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FTWEB25/mock_api_temp/issues"
+  },
+  "homepage": "https://github.com/FTWEB25/mock_api_temp#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
