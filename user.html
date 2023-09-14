@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; 
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: yellow;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        #form-container{
+            /* background-color: red; */
+            width: 600px;
+            height: 600px;
+            margin: auto;
+            
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: auto;
+            padding-top: 100px;
+            /* justify-content: space-around; */
+            align-items: center;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+         <a href="./index.html">Home Page</a>
+    </header>
+    
+    <!-- body part goes here -->
+
+    <div id="form-container">
+        <form action="">
+            <label for="name">Enter Name</label>
+            <input type="text" id="name">
+
+            <label for="age">Enter Age</label>
+            <input type="text" id="age">
+
+            <label for="gender">Enter Gender</label>
+            <input type="text" id="gender">
+
+            <label for="place">Enter Place</label>
+            <input type="text" id="place">
+
+            <input type="submit">
+
+        </form> 
+    </div>
+    <script>
+        let formel=document.querySelector("form")
+        formel.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            let payload={
+                name:document.getElementById("name").value,
+                age:document.getElementById("age").value,
+                gender:document.getElementById("gender").value,
+                place:document.getElementById("place").value
+            }
+            console.log(payload)
+        })
+    </script>
+</body>
+</html>
